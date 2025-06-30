@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 25rem;
+    min-height: 22rem;
+    background: #fff;
+    border-radius: .7rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 1.2rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.heading {
+    margin: 1rem 0;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0 0.8rem;
+    box-sizing: border-box;
+}
+
+#password {
+    width: 100%;
+    background: #f7f7fa;
+    padding: 0.9rem 2.5rem 0.9rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: .5rem;
+    margin: 0;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+#password:focus {
+    outline: none;
+    border: 1.5px solid #6c63ff;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #888;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 10px;
+    background: #eee;
+    margin-bottom: 0.7rem;
+    overflow: hidden;
+}
+
+#strength-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff4e50, #f9d423, #6cdd6c, #6c63ff);
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.output {
+    width: 100%;
+    padding: .2rem 0;
+    font-size: 1rem;
+    text-align: center;
+    min-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.requirements {
+    list-style: none;
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    padding: 0 0.8rem;
+}
+
+.req-item {
+    color: #b0b0b0;
+    font-size: .97rem;
+    margin-bottom: .18rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.arrow {
+    margin-left: 0.5em;
+    margin-right: 0;
+    color: #2ecc40;
+    font-size: 1.1em;
+    visibility: hidden;
+    transition: visibility 0.2s;
+    display: inline-block;
+    min-width: 1.1em;
+    text-align: right;
+}
+
+.req-item.met {
+    color: #2ecc40;
+    font-weight: 600;
+}
+
+.req-item.met .arrow {
+    visibility: visible;
+}
+
+/* Remove checkmark styles */
+.checkmark, .req-item .checkmark::before, .req-item.met .checkmark::before {
+    display: none !important;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0.7rem 0.2rem;
+        min-height: 16rem;
+    }
+    .requirements {
+        font-size: .9rem;
+    }
+}
+
+.input {
+    width: 100%;
+}

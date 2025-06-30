@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password strenth indicator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">Password Strength Checker</h2>
+        <div class="input">
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Enter your password" autocomplete="off">
+                <span id="togglePassword" title="Show/Hide Password">
+                    <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"
+                        viewBox="0 0 24 24" style="vertical-align:middle;">
+                        <path stroke="#888" stroke-width="2" d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12Z" />
+                        <circle cx="12" cy="12" r="3" stroke="#888" stroke-width="2" />
+                    </svg>
+                    <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"
+                        viewBox="0 0 24 24" style="display:none;vertical-align:middle;">
+                        <path stroke="#888" stroke-width="2"
+                            d="M3 3l18 18M1 12s4-7 11-7c2.5 0 4.7.7 6.5 1.8M23 12s-4 7-11 7c-2.5 0-4.7-.7-6.5-1.8" />
+                        <circle cx="12" cy="12" r="3" stroke="#888" stroke-width="2" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="strength-bar">
+            <div id="strength-bar-fill"></div>
+        </div>
+        <div class="output">
+            <span id="result"></span>
+        </div>
+        <ul class="requirements">
+            <li id="req-length" class="req-item">
+                At least 8 characters
+                <span class="arrow"></span>
+            </li>
+            <li id="req-upper" class="req-item">
+                Uppercase letter
+                <span class="arrow"></span>
+            </li>
+            <li id="req-lower" class="req-item">
+                Lowercase letter
+                <span class="arrow"></span>
+            </li>
+            <li id="req-number" class="req-item">
+                Number
+                <span class="arrow"></span>
+            </li>
+            <li id="req-special" class="req-item">
+                Special character
+                <span class="arrow"></span>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
