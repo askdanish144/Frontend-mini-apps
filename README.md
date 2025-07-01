@@ -11,12 +11,11 @@ A collection of beginner-to-intermediate frontend utilities built using HTML, CS
 ![Screenshot](./QR-Screenshot.png)
 
 **Description:**  
-Convert any text input into a scannable QR code instantly. Built using a public QR API and styled with a responsive layout.
+Convert any text input into a scannable QR code instantly. Built using a public QR API.
 
 **🛠 Features:**
 - Input any string or URL to generate a QR code
 - Real-time generation
-- Clear UI for mobile & desktop
 
 ---
 
