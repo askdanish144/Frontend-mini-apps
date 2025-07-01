@@ -48,16 +48,6 @@ It updates live as you type, using a color-coded progress bar to indicate the pa
 
 ---
 
-## 🗂️ Folder Structure
-
-Frontend-mini-apps/
-│
-├── 1_QR_code_generator/
-│   └── index.html, style.css, script.js
-│
-└── 2_Password_strenth_indicator/
-    └── index.html, style.css, script.js
-
 ## 💡 Using This Repo
 
 This repo is intended solely for portfolio and educational purposes. Please give credit if you reference or reuse the code
