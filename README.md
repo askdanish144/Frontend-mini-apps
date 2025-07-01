@@ -8,7 +8,7 @@ A collection of beginner-to-intermediate frontend utilities built using HTML, CS
 
 ### 1. 📲 QR Code Generator
 
-![Screenshot](./QR-Screenshot.png)
+![Screenshot](./1_QR_code_generator/QR-Screenshot.png)
 
 **Description:**  
 Convert any text input into a scannable QR code instantly. Built using a public QR API.
@@ -21,7 +21,7 @@ Convert any text input into a scannable QR code instantly. Built using a public 
 
 ### 2. 🔐 Password Strength Checker
 
-![Screenshot](./PSC-Screenshot.png)
+![Screenshot](./2_Password_strenth_indicator/PSC-Screenshot.png)
 
 **Description:**  
 This dynamic password validator checks for:
